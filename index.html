@@ -6,52 +6,80 @@
     <title>زندگی‌نامه محسن نامجو</title>
     <style>
         body {
-            background-color: #f1f1f1; /* خاکستری روشن */
-            color: #333; /* رنگ متن تیره */
-            font-family: 'Arial', sans-serif;
-            text-align: center;
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
+            transition: background-color 0.5s ease;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-in-out;
         }
 
-        h1, h2 {
-            color: #555;
-        }
-
-        .container {
-            width: 80%;
-            margin: 50px auto;
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 2s ease-out;
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         .content {
-            line-height: 1.8;
+            padding: 40px;
+            text-align: center;
             font-size: 18px;
-            color: #666;
+            line-height: 1.6;
+            animation: slideIn 2s ease-out;
         }
 
-        /* انیمیشن برای فید این */
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(50px); }
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        .footer {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #888;
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            text-align: justify;
+            padding: 0 20px;
+        }
+
     </style>
 </head>
 <body>
+    <header>
+        زندگی‌نامه محسن نامجو
+    </header>
 
-    <div class="container">
-        <h1>زندگی‌نامه محسن نامجو</h1>
-        <h2>خواننده، آهنگ‌ساز و ترانه‌سرای ایرانی</h2>
-        <div class="content">
-            <p>مح
+    <div class="content">
+        <h1>محسن نامجو</h1>
+        <h2>خواننده، آهنگساز و نوازنده ایرانی</h2>
+        <p>محسن نامجو متولد ۲۴ بهمن ۱۳۵۴ در مشهد، ایران است. او یکی از هنرمندان برجسته موسیقی معاصر ایران به شمار می‌رود و با صدای منحصر به فرد و سبک خاص خود در دنیای موسیقی شناخته شده است. محسن نامجو در ابتدا به عنوان نوازنده و آهنگساز در عرصه موسیقی ایرانی شروع به فعالیت کرد و سپس با همکاری با هنرمندان مختلف، وارد دنیای موسیقی پاپ و تلفیقی شد.</p>
+        
+        <p>آلبوم‌های او معمولاً ترکیبی از موسیقی سنتی و مدرن ایرانی است و به علت استفاده از لحن‌های خاص و بازخوانی اشعار کلاسیک ایرانی، طرفداران بسیاری پیدا کرده است. محسن نامجو همچنین در زمینه‌ی شعرخوانی و آواز کلاسیک ایرانی نیز فعالیت‌هایی داشته است.</p>
+
+        <p>محسن نامجو توانسته است با ایجاد فضایی نو در موسیقی ایرانی و استفاده از آواهای جدید، جایگاه ویژه‌ای در قلب مخاطبان خود پیدا کند و همچنان یکی از تاثیرگذارترین چهره‌ها در عرصه موسیقی ایران است.</p>
+    </div>
+
+    <footer>
+        © 2025 زندگی‌نامه محسن نامجو
+    </footer>
+</body>
+</html>
